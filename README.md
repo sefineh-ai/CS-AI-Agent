@@ -14,28 +14,3 @@ Backend: FastAPI, LangChain, OpenAI GPT, Pinecone, Google Search API (SerpAPI)
 Frontend: Next.js, TypeScript, React
 Database: Pinecone (Vector Database for efficient search)
 Environment & Deployment: Docker, Uvicorn, Vercel
-
-# Project structure
-CS-AI-Agent/
-│── backend/
-│   ├── main.py                 # FastAPI entry point
-│   ├── config.py               # Environment variables
-│   ├── vector_store.py         # Pinecone setup and retrieval
-│   ├── search_fallback.py      # Google Search API integration
-│   ├── chat_agent.py           # Core AI chatbot logic
-│   ├── data_loader.py          # Document ingestion to Pinecone
-│   ├── requirements.txt        # Dependencies
-│   └── .env                    # API keys and secrets
-│
-│── frontend/
-│   ├── pages/
-│   │   ├── index.tsx           # Chat UI
-│   │   ├── api/chat.ts         # API calls to backend
-│   └── components/
-│       ├── ChatBox.tsx         # Chat component
-│       ├── Message.tsx         # Message UI
-│       ├── Input.tsx           # User input field
-│
-│── docs/                       # Knowledge base & datasets
-│── scripts/                    # Utility scripts (e.g., testing, ingestion)
-│── README.md                   # Project documentation
