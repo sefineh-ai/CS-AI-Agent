@@ -9,11 +9,20 @@ This agent first searches a vector database for relevant support documents and, 
 ✅ Pinecone Vector Database – Stores and retrieves relevant customer support documents.<br>
 ✅ AutoGen for Multi-Agent Collaboration (Planned Feature) – Multiple AI agents working together for better responses.<br>
 
+### AutoGen – Manage multi-agent workflows (e.g., one agent for retrieval, one for response generation).
+
 # Tech Stack<br>
-Backend: FastAPI, LangChain, OpenAI GPT, Pinecone, Google Search API (SerpAPI)<br>
-Frontend: Next.js, TypeScript, React<br>
-Database: Pinecone (Vector Database for efficient search)<br>
-Environment & Deployment: Docker, Uvicorn, Vercel<br>
+**Backend**: FastAPI, LangChain, OpenAI GPT, Pinecone, Google Search API (SerpAPI)<br>
+**Frontend**: Next.js, TypeScript, React<br>
+**Database**: Pinecone (Vector Database for efficient search)<br>
+**Environment & Deployment**: Docker, Uvicorn, Vercel<br>
+
+# Flow of the AI Agent
+**User Query**: Customer asks a question via chat or support portal.
+**Search in Vector DB (Pinecone)**: Retrieve relevant answers from stored data.
+**AI Response**: If relevant context is found → Use GPT to generate a response.
+**Google Search Fallback**: If the answer is missing → Fetch top results using Google Search API.
+**Final Response**: AI generates a combined response using search data + LLM.
 
 # CS-AI-Agent/ <br>
 │── backend/ <br>
