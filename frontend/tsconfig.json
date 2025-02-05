@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+    "target": "ES6",
+    "lib": ["ES2015", "DOM"],
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "moduleResolution": "node",
+      "jsx": "preserve",
+      "skipLibCheck": true,
+      
+    },
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "node_modules"]
+  }
+  
